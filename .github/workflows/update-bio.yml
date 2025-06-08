@@ -1,0 +1,39 @@
+name: 🔁 Daily Bio Update
+
+on:
+  schedule:
+    - cron: '0 5 * * *' # runs every day at 10:30 AM IST
+  workflow_dispatch:
+
+jobs:
+  update-bio:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Update GitHub Bio
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GH_TOKEN }}
+          script: |
+            const bios = [
+              "💻 Favorite stack: Python, TypeScript, AI",
+              "🎯 Quote: 'Stay curious. Keep building. Never settle.'",
+              "📈 Goal: Financial freedom through tech innovation",
+              "⚡ Learning something new every single day!",
+              "🧠 Growth is the only constant",
+              "👨‍💻 Obsessed with building things that matter",
+              "🚧 Currently mastering: Java + DSA grind mode 🔁",
+              "🎯 Dream big, build bigger",
+              "🔍 Exploring tech to find what truly excites me",
+              "🎵 Music + Code = My daily fuel",
+              "🔥 Making small consistent moves toward greatness",
+              "🌟 Learning by doing — no shortcuts, no limits",
+              "📚 Rewriting my story one skill at a time"
+            ];
+            const randomBio = bios[Math.floor(Math.random() * bios.length)];
+            await github.request('PATCH /user', {
+              name: 'Daksh Goel',
+              bio: randomBio
+            });
