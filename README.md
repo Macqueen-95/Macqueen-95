@@ -24,6 +24,9 @@
 </p>
 
 ---
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Macqueen-95/Macqueen-95/main/banner.png" alt="Daksh Goel Banner" width="100%" />
+</p>
 
 ### 🌐 Connect With Me
 <p align="center">
