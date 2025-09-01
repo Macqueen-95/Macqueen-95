@@ -9,7 +9,7 @@
 ### 🧠 About Me
 - 🎓 B.Tech CSE @ VIT Chennai  
 - 🐍 Python is my strongest zone  
-- 🧩 Learning: C/C++, Web Dev, AI  
+- 🧩 Learning: C/C++, Java, Web Dev, AI  
 - 🛠 Building cool stuff with code & creativity  
 - 🌌 Dreaming big, executing daily  
 
@@ -19,7 +19,6 @@
 <p align="center">
   <img src="https://img.shields.io/badge/-Python-000?&logo=python&logoColor=yellow" />
   <img src="https://img.shields.io/badge/-C++-000?&logo=c%2B%2B&logoColor=blue" />
-  <img src="https://img.shields.io/badge/-TypeScript-000?&logo=typescript&logoColor=3178c6" />
   <img src="https://img.shields.io/badge/-Figma-000?&logo=figma&logoColor=f24e1e" />
 </p>
 
